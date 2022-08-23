@@ -1,0 +1,40 @@
+@mixin font-template ($size, $weight: 400) {
+  font-size: $size;
+  font-weight: $weight;
+}
+
+@mixin ellipsis () {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin stroked-text () {
+  color: $stroked-text-color;
+  position: relative;
+
+  &:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 2px;
+    background-color: $stroked-text-color;
+  }
+}
+
+@mixin empty-list {
+  min-height: 198px;
+  position: relative;
+
+  &:after {
+    position: absolute;
+    content: 'Список пуст';
+    color: $stroked-text-color;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%)
+  }
+}

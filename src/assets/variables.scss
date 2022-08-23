@@ -1,0 +1,33 @@
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;900&display=block');
+@import url('~@/assets/fonts/fonts.scss');
+
+// Variables
+$font-family: 'Montserrat', sans-serif;
+
+$accent-color: #2191D0;
+$body-background: $accent-color;
+$header-text-color: #0D608E;
+
+// Card
+$card-title-color: #000000;
+$card-header-background: #E4E4E4;
+$item-text-color: #414141;
+$stroked-text-color: #C6C6C6;
+$card-width: 500px;
+
+// Btns
+$remove-btn-color: #C36355;
+$remove-btn-hover-color: #9c4f44;
+$cancel-btn-color: #414141;
+$ok-btn-color: $accent-color;
+$ok-btn-hover-color: #1a74a6;
+
+// Confirm
+$confirm-overlay-bg: rgba(9, 67, 99, 0.8);
+$confirm-width: 400px;
+$confirm-height: 200px;
+$confirm-text-color: #414141;
+
+$transition: .25s ease;
+
+
